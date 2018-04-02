@@ -65,6 +65,11 @@ bot.on("message", async message => {
         var item = items[Math.floor(Math.random()*items.length)];
         message.channel.send(item);
     }
+    if(cmd === `${prefix}play`){
+        var items = Array("Yasuo", "Tryndamere", "Jhin", "Kai`sa", "Rengar", "Kalista", "Draven");
+        var item = items[Math.floor(Math.random()*items.length)];
+        message.channel.send("Me apetece jugar "+item);
+    }
 });
 
 bot.login(process.env.BOT_TOKEN);
