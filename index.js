@@ -31,6 +31,8 @@ bot.on("message", async message => {
         .setThumbnail(icon)
         .addField("!serverinfo", "Información acerca del servidor")
         .addField("!help", "Lista de comandos")
+        .addField("!posicion", "Te dice de que posicion tienes que jugar la proxima partida")
+        .addField("!LuisJuega", "¿Qué proximo campeón jugará Luis?")
         .addField("!luis", "Las frases de Luis! Ahora en tu servidor de confianza!");
 
         message.reply("Te he enviado un puto mensaje con los comandos, no me molestes mas joder.");
