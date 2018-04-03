@@ -63,7 +63,7 @@ bot.on("message", async message => {
         return message.channel.send(serverembed);
     }
     if(cmd === `${prefix}luis`){
-        var items = Array("Soy main Yasuo, confia en mi", "JODERRRRRRRRRRR", "Reformed", "El fortnite es una mierda", "0/10, ahora comienza el power spike!", "Puto jungla que no gankea", "Ya veras, me voy a hacer un 1v9");
+        var items = Array("Soy main Yasuo, confia en mi", "JODERRRRRRRRRRR", "Reformed", "El fortnite es una mierda", "0/10, ahora comienza el power spike!", "Puto jungla que no gankea", "Ya veras, me voy a hacer un 1v9", "Kike ponte curar!");
         var item = items[Math.floor(Math.random()*items.length)];
         message.channel.send(item);
     }
@@ -77,6 +77,7 @@ bot.on("message", async message => {
         var item = items[Math.floor(Math.random()*items.length)];
         message.reply("Tienes que jugar de "+item);
     }
+    
 });
 
 bot.login(process.env.BOT_TOKEN);
